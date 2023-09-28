@@ -41,7 +41,11 @@ const GameList = () => {
     }, []);
 
     if (!data) {
-        return null;
+        return (
+            <div className="m-96">
+                <p className="text-center">Loading...</p>
+            </div>
+        );
     }
     return (
         <div className="bg-white">

@@ -26,10 +26,11 @@ const Game = ({
                 <div className="col-span-4 flex items-center justify-center md:col-span-1">
                     <Link href={url}>
                         <Image
-                            className="rounded-md"
+                            className="h-auto w-full rounded-md"
                             src={imagePath}
-                            width={300}
-                            height={300}
+                            width="0"
+                            height="0"
+                            sizes="100vw"
                             alt={imageAlt}
                         />
                     </Link>
@@ -47,7 +48,7 @@ const Game = ({
                                 <Image
                                     src="/img/games/playstore.png"
                                     width={200}
-                                    height={200}
+                                    height={0}
                                     alt=""
                                 />
                             </Link>
@@ -57,7 +58,7 @@ const Game = ({
                                 <Image
                                     src="/img/games/itchio.png"
                                     width={200}
-                                    height={200}
+                                    height={0}
                                     alt=""
                                 />
                             </Link>
