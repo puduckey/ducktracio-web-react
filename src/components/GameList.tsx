@@ -3,8 +3,8 @@ import Image from "next/image";
 import Game from "./Game";
 import { useEffect, useState } from "react";
 
-interface Game {
-    id: number;
+export interface Game {
+    id: string;
     title: string;
     description: string;
     status: string;
@@ -14,8 +14,8 @@ interface Game {
     linux: boolean;
     genre: string;
     playerCount: string;
-    langEs: boolean; // Cambiado de "lang-es" a "langEs" para seguir las convenciones de nombres de TypeScript
-    langEn: boolean; // Cambiado de "lang-en" a "langEn" para seguir las convenciones de nombres de TypeScript
+    langEs: boolean;
+    langEn: boolean;
     urls: {
         page: string;
         playstore: string;
@@ -59,7 +59,7 @@ const GameList = () => {
                             description={game.description}
                             imagePath={game.imagesPath.cover}
                             imageAlt={game.title + ` game by Ducktracio`}
-                            url={game.urls.page}
+                            id={game.id}
                             playstoreUrl={game.urls.playstore}
                             itchUrl={game.urls.itch}
                         />

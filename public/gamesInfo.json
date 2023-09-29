@@ -1,7 +1,7 @@
 {
     "games": [
         {
-            "id": 1,
+            "id": "sf-thread-curse",
             "title": "Sleeping Flowers: Thread Curse",
             "description": "An arcade game with pixel-art style graphics, where you control two characters and a thread that connects them. Be careful with the dangers and defeat the enemies that appear in each wave.",
             "status": "released",
@@ -11,8 +11,8 @@
             "linux": true,
             "genre": "Arcade",
             "playerCount": "1-2",
-            "lang-es": true,
-            "lang-en": true,
+            "langEs": true,
+            "langEn": true,
             "urls": {
                 "page": "/games/sf-thread-curse",
                 "playstore": "https://play.google.com/store/apps/details?id=com.Ducktracio.SleepingFlowersThreadCurse",
@@ -23,7 +23,7 @@
             }
         },
         {
-            "id": 2,
+            "id": "sf-dahlia-dreams",
             "title": "Sleeping Flowers: Dahlia Dreams",
             "description": "Embark on Stella's dreams in this Shoot 'em Up adventure. Dodge, shoot, cast spells, acquire new abilities, and face off against challenging bosses at each level.",
             "status": "released",
@@ -33,8 +33,8 @@
             "linux": true,
             "genre": "Shoot 'em Up",
             "playerCount": "1",
-            "lang-es": true,
-            "lang-en": true,
+            "langEs": true,
+            "langEn": true,
             "urls": {
                 "page": "/games/sf-dahlia-dreams",
                 "playstore": "",
@@ -45,7 +45,7 @@
             }
         },
         {
-            "id": 3,
+            "id": "ricochet-girls",
             "title": "Ricochet Girls",
             "description": "Welcome to Ricochet Girls, the mobile game that blends casual fun with arcade action and a Roguelite twist! Sharpen your reflexes as you dive into an exhilarating challenge of aim and destruction.",
             "status": "in development",
@@ -55,8 +55,8 @@
             "linux": false,
             "genre": "Arcade, Roguelite",
             "playerCount": "1",
-            "lang-es": true,
-            "lang-en": true,
+            "langEs": true,
+            "langEn": true,
             "urls": {
                 "page": "/games/ricochet-girls",
                 "playstore": "",

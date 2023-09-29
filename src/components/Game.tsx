@@ -8,7 +8,7 @@ interface GameSummary {
     imageAlt: string;
     playstoreUrl: string;
     itchUrl: string;
-    url: string;
+    id: string;
 }
 
 const Game = ({
@@ -18,13 +18,14 @@ const Game = ({
     imageAlt,
     playstoreUrl,
     itchUrl,
-    url,
+    id,
 }: GameSummary) => {
+    const gameUrl = "/games/" + id;
     return (
         <div className="my-3 rounded-md p-3 hover:bg-gray-300">
             <div className="grid grid-cols-4">
                 <div className="col-span-4 flex items-center justify-center md:col-span-1">
-                    <Link href={url}>
+                    <Link href={gameUrl}>
                         <Image
                             className="h-auto w-full rounded-md"
                             src={imagePath}
@@ -36,7 +37,7 @@ const Game = ({
                     </Link>
                 </div>
                 <div className="col-span-4 px-3 md:col-span-3">
-                    <Link href={url}>
+                    <Link href={gameUrl}>
                         <h1 className="text-center text-lg">{title}</h1>
                         <p className="text-justify text-sm text-gray-600">
                             {description}
