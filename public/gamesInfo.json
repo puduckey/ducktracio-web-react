@@ -4,66 +4,91 @@
             "id": "sf-thread-curse",
             "title": "Sleeping Flowers: Thread Curse",
             "description": "An arcade game with pixel-art style graphics, where you control two characters and a thread that connects them. Be careful with the dangers and defeat the enemies that appear in each wave.",
-            "status": "released",
-            "release": "01-07-2023",
-            "android": true,
-            "windows": true,
-            "linux": true,
+            "status": "Released",
+            "release": "January 7, 2023",
+            "platforms": "Android, Windows and Linux",
             "genre": "Arcade",
-            "playerCount": "1-2",
-            "langEs": true,
-            "langEn": true,
+            "playerCount": "1 - 2",
+            "lang": "English and Spanish",
             "urls": {
                 "page": "/games/sf-thread-curse",
                 "playstore": "https://play.google.com/store/apps/details?id=com.Ducktracio.SleepingFlowersThreadCurse",
-                "itch": "https://ducktracio.itch.io/sleeping-flowers-dahlia-dreams"
+                "itch": "https://ducktracio.itch.io/sleeping-flowers-dahlia-dreams",
+                "trailer": "https://www.youtube.com/embed/KNunwt1rrBk"
             },
             "imagesPath": {
-                "cover": "/img/games/sf_thread_curse/cover.png"
+                "cover": "/img/games/sf_thread_curse/cover.png",
+                "logo": "/img/games/sf_thread_curse/logo.png",
+                "background": "/img/games/sf_thread_curse/func_graph.png",
+                "groupPortrait": "/img/games/sf_thread_curse/portd.png",
+                "screenshots": [
+                    "/img/games/sf_thread_curse/screenshots/en/1.png",
+                    "/img/games/sf_thread_curse/screenshots/en/2.png",
+                    "/img/games/sf_thread_curse/screenshots/en/3.png",
+                    "/img/games/sf_thread_curse/screenshots/en/4.png",
+                    "/img/games/sf_thread_curse/screenshots/en/5.png",
+                    "/img/games/sf_thread_curse/screenshots/gif/gif_0.gif"
+                ]
             }
         },
         {
             "id": "sf-dahlia-dreams",
             "title": "Sleeping Flowers: Dahlia Dreams",
             "description": "Embark on Stella's dreams in this Shoot 'em Up adventure. Dodge, shoot, cast spells, acquire new abilities, and face off against challenging bosses at each level.",
-            "status": "released",
-            "release": "08-13-2023",
-            "android": false,
-            "windows": true,
-            "linux": true,
+            "status": "Released",
+            "release": "August 13, 2023",
+            "platforms": "Windows and Linux",
             "genre": "Shoot 'em Up",
             "playerCount": "1",
-            "langEs": true,
-            "langEn": true,
+            "lang": "English and Spanish",
             "urls": {
                 "page": "/games/sf-dahlia-dreams",
                 "playstore": "",
-                "itch": "https://ducktracio.itch.io/sleeping-flowers-dahlia-dreams"
+                "itch": "https://ducktracio.itch.io/sleeping-flowers-dahlia-dreams",
+                "trailer": ""
             },
             "imagesPath": {
-                "cover": "/img/games/sf_dahlia_dreams/cover.png"
+                "cover": "/img/games/sf_dahlia_dreams/cover.png",
+                "logo": "/img/games/sf_dahlia_dreams/logo.png",
+                "background": "/img/games/sf_dahlia_dreams/func_graph.png",
+                "groupPortrait": "/img/games/sf_dahlia_dreams/portd.png",
+                "screenshots": [
+                    "/img/games/sf_dahlia_dreams/screenshots/1.png",
+                    "/img/games/sf_dahlia_dreams/screenshots/2.png",
+                    "/img/games/sf_dahlia_dreams/screenshots/3.png",
+                    "/img/games/sf_dahlia_dreams/screenshots/4.png",
+                    "/img/games/sf_dahlia_dreams/screenshots/5.png",
+                    "/img/games/sf_dahlia_dreams/screenshots/6.png"
+                ]
             }
         },
         {
             "id": "ricochet-girls",
             "title": "Ricochet Girls",
             "description": "Welcome to Ricochet Girls, the mobile game that blends casual fun with arcade action and a Roguelite twist! Sharpen your reflexes as you dive into an exhilarating challenge of aim and destruction.",
-            "status": "in development",
-            "release": "2023",
-            "android": true,
-            "windows": false,
-            "linux": false,
+            "status": "In development",
+            "release": "2023 (Coming soon)",
+            "platforms": "Android",
             "genre": "Arcade, Roguelite",
             "playerCount": "1",
-            "langEs": true,
-            "langEn": true,
+            "lang": "English and Spanish",
             "urls": {
                 "page": "/games/ricochet-girls",
                 "playstore": "",
-                "itch": ""
+                "itch": "",
+                "trailer": ""
             },
             "imagesPath": {
-                "cover": "/img/games/sf_naomi/cover.png"
+                "cover": "/img/games/sf_naomi/cover.png",
+                "logo": "/img/games/sf_naomi/logo.png",
+                "background": "/img/games/sf_naomi/func_graph.png",
+                "groupPortrait": "/img/games/sf_naomi/Illustration.png",
+                "screenshots": [
+                    "/img/games/sf_naomi/screenshots/1.jpg",
+                    "/img/games/sf_naomi/screenshots/2.jpg",
+                    "/img/games/sf_naomi/screenshots/3.jpg",
+                    "/img/games/sf_naomi/screenshots/4.jpg"
+                ]
             }
         }
     ]

@@ -9,20 +9,22 @@ export interface Game {
     description: string;
     status: string;
     release: string;
-    android: boolean;
-    windows: boolean;
-    linux: boolean;
+    platforms: string;
     genre: string;
     playerCount: string;
-    langEs: boolean;
-    langEn: boolean;
+    lang: string;
     urls: {
         page: string;
         playstore: string;
         itch: string;
+        trailer: string;
     };
     imagesPath: {
         cover: string;
+        logo: string;
+        background: string;
+        groupPortrait: string;
+        screenshots: string[];
     };
 }
 interface Data {
