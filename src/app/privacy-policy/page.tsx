@@ -1,3 +1,5 @@
+import BottomBar from "@/components/BottomBar";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
@@ -113,6 +115,8 @@ const PrivacyPolicy = () => {
                     .
                 </p>
             </div>
+            <BottomBar />
+            <Footer />
         </>
     );
 };
