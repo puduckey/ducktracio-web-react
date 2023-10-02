@@ -31,7 +31,7 @@ const AllGames: FC<Props> = ({ language }) => {
             .then((response) => response.json())
             .then((data) => setData(data))
             .catch((error) => console.error("Error:", error));
-    }, []);
+    });
 
     if (!data) {
         return (
