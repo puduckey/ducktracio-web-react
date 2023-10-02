@@ -8,3 +8,4 @@
 -   [tailwindcss](https://tailwindcss.com/)
 -   [Fontawesome](https://fontawesome.com/)
 -   [Automatic Class Sorting with Prettier](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
+-   [Lexend font](https://fonts.google.com/specimen/Lexend)
