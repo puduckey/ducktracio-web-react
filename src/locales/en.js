@@ -14,7 +14,7 @@ const localization = {
     loading: "Loading",
     game_not_found: "Game not found!",
     return_to_home: "Go to home",
-    language_switch: "Español",
+    language_switch: "Cambiar a español",
 
     privacy_policy: "Privacy Policy",
     pp_1: "Privacy policy for games developed by Ducktracio",

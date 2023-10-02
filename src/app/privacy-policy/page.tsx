@@ -4,6 +4,13 @@ import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import getTranslations from "@/getTranslations";
 
+export const generateMetadata = () => {
+    return {
+        title: "Privacy Policy | Ducktracio",
+        description: "Ducktracio Privacy Policy",
+    };
+};
+
 const PrivacyPolicy = () => {
     const localization = getTranslations("en");
 

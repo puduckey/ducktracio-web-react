@@ -2,8 +2,6 @@ import localization_en from "./locales/en";
 import localization_es from "./locales/es";
 
 const getTranslations = (language) => {
-    console.log(language);
-
     if (language === "en") {
         return localization_en;
     } else if (language === "es") {

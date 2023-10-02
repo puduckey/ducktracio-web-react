@@ -9,6 +9,18 @@ import BottomBar from "@/components/BottomBar";
 import Footer from "@/components/Footer";
 import AllGames from "@/components/AllGames";
 import getTranslations from "@/getTranslations";
+import { notFound } from "next/navigation";
+
+export const generateMetadata = ({ params }: { params: { id: string } }) => {
+    const game: Game | undefined = gamesInfo.games.find(
+        (game: { id: string }) => game.id === params.id
+    );
+
+    return {
+        title: game?.title,
+        description: game?.title + " Official Game Page",
+    };
+};
 
 const GameInfo = ({ params }: { params: { id: string } }) => {
     const localization = getTranslations("en");
@@ -17,18 +29,7 @@ const GameInfo = ({ params }: { params: { id: string } }) => {
     );
 
     if (!game) {
-        return (
-            <div className="text-center">
-                <Navbar language="en" currentUrl={"/games/" + params.id} />
-                <p className="my-3">{localization.game_not_found}</p>
-                <Link
-                    href={"/"}
-                    className="rounded-md bg-black p-2 text-white hover:bg-pink-400"
-                >
-                    {localization.return_to_home}
-                </Link>
-            </div>
-        );
+        return notFound();
     }
 
     return (

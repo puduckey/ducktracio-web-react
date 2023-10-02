@@ -6,7 +6,7 @@ const lexend = Lexend({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Ducktracio",
-    description: "Ducktracio webpage",
+    description: "Ducktracio game developer webpage",
 };
 
 export default function RootLayout({

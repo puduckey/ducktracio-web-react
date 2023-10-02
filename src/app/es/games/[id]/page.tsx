@@ -10,6 +10,17 @@ import Footer from "@/components/Footer";
 import AllGames from "@/components/AllGames";
 import getTranslations from "@/getTranslations";
 
+export const generateMetadata = ({ params }: { params: { id: string } }) => {
+    const game: Game | undefined = gamesInfo.games.find(
+        (game: { id: string }) => game.id === params.id
+    );
+
+    return {
+        title: game?.title,
+        description: game?.title + " sitio web oficial",
+    };
+};
+
 const GameInfo = ({ params }: { params: { id: string } }) => {
     const localization = getTranslations("es");
     const game: Game | undefined = gamesInfo.games.find(
