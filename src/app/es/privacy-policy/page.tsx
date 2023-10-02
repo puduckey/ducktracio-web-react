@@ -5,11 +5,11 @@ import Link from "next/link";
 import getTranslations from "@/getTranslations";
 
 const PrivacyPolicy = () => {
-    const localization = getTranslations("en");
+    const localization = getTranslations("es");
 
     return (
         <>
-            <Navbar language="en" currentUrl="/privacy-policy" />
+            <Navbar language="es" currentUrl={"/es/privacy-policy/"} />
             <div className="bg-black p-8 text-center text-3xl text-white">
                 {localization.privacy_policy}
             </div>

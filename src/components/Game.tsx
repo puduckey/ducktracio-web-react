@@ -9,6 +9,7 @@ interface GameSummary {
     playstoreUrl: string;
     itchUrl: string;
     id: string;
+    language: string;
 }
 
 const Game = ({
@@ -19,8 +20,12 @@ const Game = ({
     playstoreUrl,
     itchUrl,
     id,
+    language,
 }: GameSummary) => {
-    const gameUrl = "/games/" + id;
+    let gameUrl = "/games/" + id;
+
+    if (language !== "en") gameUrl = "/" + language + gameUrl;
+
     return (
         <div className="my-3 rounded-md p-3 hover:bg-gray-300">
             <div className="grid grid-cols-4">

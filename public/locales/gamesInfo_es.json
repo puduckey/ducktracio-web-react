@@ -1,0 +1,95 @@
+{
+    "games": [
+        {
+            "id": "sf-thread-curse",
+            "title": "Sleeping Flowers: Thread Curse",
+            "description": "Sleeping Flowers: Thread Curse es un juego arcade con gráficos estilo pixel-art, en donde controlas a dos personajes y el hilo que les une. Ten cuidado con los peligros y derrota a los enemigos que se presentan en cada oleada.",
+            "status": "Publicado",
+            "release": "7 de enero, 2023",
+            "platforms": "Android, Windows y Linux",
+            "genre": "Arcade",
+            "playerCount": "1 - 2",
+            "lang": "Español e Inglés",
+            "urls": {
+                "page": "/games/sf-thread-curse",
+                "playstore": "https://play.google.com/store/apps/details?id=com.Ducktracio.SleepingFlowersThreadCurse",
+                "itch": "https://ducktracio.itch.io/sleeping-flowers-dahlia-dreams",
+                "trailer": "https://www.youtube.com/embed/KNunwt1rrBk"
+            },
+            "imagesPath": {
+                "cover": "/img/games/sf_thread_curse/cover.png",
+                "logo": "/img/games/sf_thread_curse/logo.png",
+                "background": "/img/games/sf_thread_curse/func_graph.png",
+                "groupPortrait": "/img/games/sf_thread_curse/portd.png",
+                "screenshots": [
+                    "/img/games/sf_thread_curse/screenshots/es/1.png",
+                    "/img/games/sf_thread_curse/screenshots/es/2.png",
+                    "/img/games/sf_thread_curse/screenshots/es/3.png",
+                    "/img/games/sf_thread_curse/screenshots/es/4.png",
+                    "/img/games/sf_thread_curse/screenshots/es/5.png",
+                    "/img/games/sf_thread_curse/screenshots/gif/gif_0.gif"
+                ]
+            }
+        },
+        {
+            "id": "sf-dahlia-dreams",
+            "title": "Sleeping Flowers: Dahlia Dreams",
+            "description": "Embárcate en los sueños de Stella en esta nueva aventura Shoot 'em Up. Esquiva, dispara, lanza hechizos, adquiere nuevas habilidades y enfrenta a los desafiantes jefes de cada nivel.",
+            "status": "Publicado",
+            "release": "13 de agosto, 2023",
+            "platforms": "Windows y Linux",
+            "genre": "Shoot 'em Up, Bullet hell",
+            "playerCount": "1",
+            "lang": "Español e Inglés",
+            "urls": {
+                "page": "/games/sf-dahlia-dreams",
+                "playstore": "",
+                "itch": "https://ducktracio.itch.io/sleeping-flowers-dahlia-dreams",
+                "trailer": ""
+            },
+            "imagesPath": {
+                "cover": "/img/games/sf_dahlia_dreams/cover.png",
+                "logo": "/img/games/sf_dahlia_dreams/logo.png",
+                "background": "/img/games/sf_dahlia_dreams/func_graph.png",
+                "groupPortrait": "/img/games/sf_dahlia_dreams/portd.png",
+                "screenshots": [
+                    "/img/games/sf_dahlia_dreams/screenshots/1.png",
+                    "/img/games/sf_dahlia_dreams/screenshots/2.png",
+                    "/img/games/sf_dahlia_dreams/screenshots/3.png",
+                    "/img/games/sf_dahlia_dreams/screenshots/4.png",
+                    "/img/games/sf_dahlia_dreams/screenshots/5.png",
+                    "/img/games/sf_dahlia_dreams/screenshots/6.png"
+                ]
+            }
+        },
+        {
+            "id": "ricochet-girls",
+            "title": "Ricochet Girls",
+            "description": "¡Bienvenido a Ricochet Girls, el juego móvil que combina diversión casual con acción arcade y un toque de Roguelite! Prepara tus reflejos mientras te sumerges en un emocionante desafío de puntería y destrucción.",
+            "status": "En desarrollo",
+            "release": "2023 (Próximamente)",
+            "platforms": "Android",
+            "genre": "Arcade, Roguelite",
+            "playerCount": "1",
+            "lang": "Español e Inglés",
+            "urls": {
+                "page": "/games/ricochet-girls",
+                "playstore": "",
+                "itch": "",
+                "trailer": ""
+            },
+            "imagesPath": {
+                "cover": "/img/games/sf_naomi/cover.png",
+                "logo": "/img/games/sf_naomi/logo.png",
+                "background": "/img/games/sf_naomi/func_graph.png",
+                "groupPortrait": "/img/games/sf_naomi/Illustration.png",
+                "screenshots": [
+                    "/img/games/sf_naomi/screenshots/1.jpg",
+                    "/img/games/sf_naomi/screenshots/2.jpg",
+                    "/img/games/sf_naomi/screenshots/3.jpg",
+                    "/img/games/sf_naomi/screenshots/4.jpg"
+                ]
+            }
+        }
+    ]
+}

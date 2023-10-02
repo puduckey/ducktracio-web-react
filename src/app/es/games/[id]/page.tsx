@@ -1,6 +1,6 @@
 import { Game } from "@/components/GameList";
 import Link from "next/link";
-import gamesInfo from "../../../../public/locales/gamesInfo_en.json";
+import gamesInfo from "../../../../../public/locales/gamesInfo_es.json";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import TopGamePresentation from "@/components/TopGamePresentation";
@@ -11,7 +11,7 @@ import AllGames from "@/components/AllGames";
 import getTranslations from "@/getTranslations";
 
 const GameInfo = ({ params }: { params: { id: string } }) => {
-    const localization = getTranslations("en");
+    const localization = getTranslations("es");
     const game: Game | undefined = gamesInfo.games.find(
         (game: { id: string }) => game.id === params.id
     );
@@ -19,10 +19,10 @@ const GameInfo = ({ params }: { params: { id: string } }) => {
     if (!game) {
         return (
             <div className="text-center">
-                <Navbar language="en" currentUrl={"/games/" + params.id} />
+                <Navbar language="es" currentUrl={"/es/games/" + params.id} />
                 <p className="my-3">{localization.game_not_found}</p>
                 <Link
-                    href={"/"}
+                    href={"/es/"}
                     className="rounded-md bg-black p-2 text-white hover:bg-pink-400"
                 >
                     {localization.return_to_home}
@@ -33,7 +33,7 @@ const GameInfo = ({ params }: { params: { id: string } }) => {
 
     return (
         <>
-            <Navbar language="en" currentUrl={"/games/" + params.id} />
+            <Navbar language="es" currentUrl={"/es/games/" + params.id} />
             <TopGamePresentation
                 logoPath={game.imagesPath.logo}
                 backgroundPath={game.imagesPath.background}

@@ -7,9 +7,9 @@ import Footer from "@/components/Footer";
 const Home = () => {
     return (
         <>
-            <Navbar language="en" currentUrl="/" />
-            <Main language="en" />
-            <GameList language="en" />
+            <Navbar language="es" currentUrl={"/es/"} />
+            <Main language="es" />
+            <GameList language="es" />
             <BottomBar />
             <Footer />
             {/* <div className="bg-black p-5">

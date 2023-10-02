@@ -43,18 +43,20 @@ const GameList: FC<Props> = ({ language }) => {
 
     const [data, setData] = useState<Data | null>(null);
     useEffect(() => {
-        const jsonPath = "/gamesInfo.json";
+        let jsonPath = "/locales";
+        if (language === "en") jsonPath += "/gamesInfo_en.json";
+        else jsonPath += "/gamesInfo_es.json";
 
         fetch(jsonPath)
             .then((response) => response.json())
             .then((data) => setData(data))
             .catch((error) => console.error("Error:", error));
-    }, []);
+    });
 
     if (!data) {
         return (
             <div className="m-96">
-                <p className="text-center">Loading...</p>
+                <p className="text-center">{localization.loading + "..."}</p>
             </div>
         );
     }
@@ -75,6 +77,7 @@ const GameList: FC<Props> = ({ language }) => {
                             id={game.id}
                             playstoreUrl={game.urls.playstore}
                             itchUrl={game.urls.itch}
+                            language={language}
                         />
                     ))}
                 </div>

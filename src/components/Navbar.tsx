@@ -1,10 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FC } from "react";
 
-const Navbar = () => {
+interface Props {
+    language: string;
+    currentUrl: string;
+}
+
+const Navbar: FC<Props> = ({ language, currentUrl }) => {
+    let homeUrl = "/";
+    let switchLanguageUrl = "/es" + currentUrl;
+    let switchLanguageText = "Español";
+
+    if (language !== "en") {
+        homeUrl += language;
+        if (currentUrl) switchLanguageUrl = currentUrl.slice(3);
+        switchLanguageText = "English";
+    }
     return (
         <div className="flex items-center justify-between bg-black p-4">
-            <Link href={"/"}>
+            <Link href={homeUrl}>
                 <Image
                     src="/img/logos/logo_nobg.png"
                     alt=""
@@ -12,9 +27,12 @@ const Navbar = () => {
                     height={50}
                 />
             </Link>
-            <button className="rounded bg-white px-4 py-2 text-black">
-                Español
-            </button>
+            <Link
+                href={switchLanguageUrl}
+                className="rounded bg-white px-4 py-2 text-black"
+            >
+                {switchLanguageText}
+            </Link>
         </div>
     );
 };
