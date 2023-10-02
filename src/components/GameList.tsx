@@ -1,7 +1,10 @@
 "use client";
+
+import React, { FC } from "react";
 import Image from "next/image";
 import Game from "./Game";
 import { useEffect, useState } from "react";
+import getTranslations from "@/getTranslations";
 
 export interface Game {
     id: string;
@@ -31,7 +34,13 @@ interface Data {
     games: Game[];
 }
 
-const GameList = () => {
+interface Props {
+    language: string;
+}
+
+const GameList: FC<Props> = ({ language }) => {
+    const localization = getTranslations(language);
+
     const [data, setData] = useState<Data | null>(null);
     useEffect(() => {
         const jsonPath = "/gamesInfo.json";
@@ -53,7 +62,9 @@ const GameList = () => {
         <div className="bg-white">
             <div className="grid grid-cols-12">
                 <div className="col-span-12 px-10 py-2 xl:col-span-9 ">
-                    <h1 className="text-center text-xl font-bold">Games</h1>
+                    <h1 className="text-center text-xl font-bold">
+                        {localization.games}
+                    </h1>
                     {data.games.map((game) => (
                         <Game
                             key={game.id}

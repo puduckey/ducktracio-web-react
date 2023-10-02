@@ -8,8 +8,8 @@ const Home = () => {
     return (
         <>
             <Navbar />
-            <Main />
-            <GameList />
+            <Main language="en" />
+            <GameList language="en" />
             <BottomBar />
             <Footer />
             {/* <div className="bg-black p-5">

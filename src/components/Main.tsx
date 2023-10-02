@@ -9,7 +9,16 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const Main = () => {
+import React, { FC } from "react";
+import getTranslations from "@/getTranslations";
+
+interface Props {
+    language: string;
+}
+
+const Main: FC<Props> = ({ language }) => {
+    const localization = getTranslations(language);
+
     return (
         <div className="bg-black">
             <div className="grid grid-cols-12">
@@ -26,7 +35,7 @@ const Main = () => {
                         Ducktracio
                     </h1>
                     <h2 className="text-l mb-8 text-gray-400 md:text-2xl">
-                        Programming, digital art and game development.
+                        {localization.programing_digitalart_gamedev}
                     </h2>
                     <div className="mx-10 mb-5 grid grid-cols-3 content-center gap-4 lg:grid-cols-6">
                         <SocialMediaButton
