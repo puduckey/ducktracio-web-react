@@ -9,7 +9,7 @@ import BottomBar from "@/components/BottomBar";
 import Footer from "@/components/Footer";
 import AllGames from "@/components/AllGames";
 import getTranslations from "@/getTranslations";
-import { notFound } from "next/navigation";
+import GameNotFound from "@/components/GameNotFound";
 
 export const generateMetadata = ({ params }: { params: { id: string } }) => {
     const game: Game | undefined = gamesInfo.games.find(
@@ -34,7 +34,7 @@ const GameInfo = ({ params }: { params: { id: string } }) => {
     );
 
     if (!game) {
-        return notFound();
+        return <GameNotFound />;
     }
 
     return (

@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
-const NotFound = () => {
+const GameNotFound = () => {
     return (
         <div className="flex h-screen items-center justify-center bg-black text-center text-white">
             <div>
                 <h1 className="text-2xl">ERROR 404</h1>
-                <h2 className="mb-3">Page not found!</h2>
+                <h2 className="mb-3">Game not found!</h2>
                 <div className="mb-4 flex justify-center">
                     <Image
                         src="/img/logos/gameover_naomi.png"
@@ -26,4 +27,4 @@ const NotFound = () => {
     );
 };
 
-export default NotFound;
+export default GameNotFound;
