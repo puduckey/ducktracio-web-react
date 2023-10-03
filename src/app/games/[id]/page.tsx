@@ -22,6 +22,11 @@ export const generateMetadata = ({ params }: { params: { id: string } }) => {
     };
 };
 
+export const generateStaticParams = () => {
+    const games: Game[] | undefined = gamesInfo.games;
+    return games.map((game) => ({ id: game.id }));
+};
+
 const GameInfo = ({ params }: { params: { id: string } }) => {
     const localization = getTranslations("en");
     const game: Game | undefined = gamesInfo.games.find(

@@ -9,6 +9,7 @@ import BottomBar from "@/components/BottomBar";
 import Footer from "@/components/Footer";
 import AllGames from "@/components/AllGames";
 import getTranslations from "@/getTranslations";
+import { notFound } from "next/navigation";
 
 export const generateMetadata = ({ params }: { params: { id: string } }) => {
     const game: Game | undefined = gamesInfo.games.find(
@@ -21,6 +22,11 @@ export const generateMetadata = ({ params }: { params: { id: string } }) => {
     };
 };
 
+export const generateStaticParams = () => {
+    const games: Game[] | undefined = gamesInfo.games;
+    return games.map((game) => ({ id: game.id }));
+};
+
 const GameInfo = ({ params }: { params: { id: string } }) => {
     const localization = getTranslations("es");
     const game: Game | undefined = gamesInfo.games.find(
@@ -28,18 +34,7 @@ const GameInfo = ({ params }: { params: { id: string } }) => {
     );
 
     if (!game) {
-        return (
-            <div className="text-center">
-                <Navbar language="es" currentUrl={"/es/games/" + params.id} />
-                <p className="my-3">{localization.game_not_found}</p>
-                <Link
-                    href={"/es/"}
-                    className="rounded-md bg-black p-2 text-white hover:bg-pink-400"
-                >
-                    {localization.return_to_home}
-                </Link>
-            </div>
-        );
+        return notFound();
     }
 
     return (
