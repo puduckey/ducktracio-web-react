@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRepeat } from "@fortawesome/free-solid-svg-icons";
 
 interface Props {
     language: string;
@@ -29,8 +31,9 @@ const Navbar: FC<Props> = ({ language, currentUrl }) => {
             </Link>
             <Link
                 href={switchLanguageUrl}
-                className="rounded bg-white px-4 py-2 text-black"
+                className="flex items-center space-x-2 rounded bg-white px-4 py-2 text-black"
             >
+                <FontAwesomeIcon icon={faRepeat} width={17} className="mr-1" />
                 {switchLanguageText}
             </Link>
         </div>
