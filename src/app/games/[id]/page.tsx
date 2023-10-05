@@ -134,7 +134,7 @@ const GameInfo = ({ params }: { params: { id: string } }) => {
                 </div>
             </div>
             <BottomBar />
-            <AllGames language="es" />
+            <AllGames language="en" />
             <Footer />
         </>
     );
