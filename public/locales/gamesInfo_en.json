@@ -65,8 +65,8 @@
         {
             "id": "ricochet-girls",
             "title": "Ricochet Girls",
-            "description": "Welcome to Ricochet Girls, the mobile game that blends casual fun with arcade action and a Roguelite twist! Sharpen your reflexes as you dive into an exhilarating challenge of aim and destruction.",
-            "status": "In development",
+            "description": "Ricochet Girls, the mobile game that blends casual fun with arcade action and a Roguelite twist! Sharpen your reflexes as you dive into an exhilarating challenge of aim and destruction.",
+            "status": "Released",
             "release": "November 10, 2023",
             "platforms": "Android",
             "genre": "Arcade, Roguelite",
@@ -74,7 +74,7 @@
             "lang": "English and Spanish",
             "urls": {
                 "page": "/games/ricochet-girls",
-                "playstore": "",
+                "playstore": "https://play.google.com/store/apps/details?id=com.ducktracio.ricochetgirls",
                 "itch": "",
                 "trailer": "https://www.youtube.com/embed/oj_tuw4vrqE"
             },
