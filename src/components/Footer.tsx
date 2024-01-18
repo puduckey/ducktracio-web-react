@@ -52,7 +52,7 @@ const Footer = () => {
                 </Link>
             </div>
             <div className="pb-3 text-center text-white">
-                Copyright © 2023 Ducktracio
+                Copyright © 2023 - 2024 Ducktracio
             </div>
         </div>
     );
